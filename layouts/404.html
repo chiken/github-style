@@ -35,7 +35,7 @@
     </div>
     {{ partial "footer.html" . }}
     <!-- Google Analytics -->
-    {{ if eq (getenv "HUGO_ENV") "production"}}
+    {{ if eq hugo.Environment "production"}}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 </body>
